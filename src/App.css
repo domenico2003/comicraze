@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+body {
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: #372e3b;
+}
+.sfondo {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font-fumetti {
+  font-family: "Bangers", system-ui;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.titolo {
+  background: linear-gradient(
+    to right,
+    #ff2600,
+    #ff7300,
+    #0059ff,
+    #0015ff
+  ); /* Imposta qui i tuoi colori per il gradiente */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 847px) {
+  .titolo {
+    font-size: 6rem !important;
+    letter-spacing: 5px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width: 700px) and (max-width: 846px) {
+  .titolo {
+    font-size: 5rem !important;
+    letter-spacing: 5px !important;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 600px) and (max-width: 699px) {
+  .titolo {
+    font-size: 4rem !important;
+    letter-spacing: 5px !important;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  .titolo {
+    font-size: 3rem !important;
+    letter-spacing: 5px !important;
+  }
+}
+@media (min-width: 400px) and (max-width: 499px) {
+  .titolo {
+    font-size: 2rem !important;
+    letter-spacing: 5px !important;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sottotitolo {
+  background: linear-gradient(
+    to right,
+    #ff2600,
+    #ff7300,
+    #0059ff,
+    #0015ff
+  ); /* Imposta qui i tuoi colori per il gradiente */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titolo-annuncio {
+  width: fit-content;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 6px #0015ff dashed;
+  background-color: rgba(0, 0, 0, 0.352);
+}
+
+.card-notizie {
+  background-color: rgba(0, 0, 0, 0.523);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.card-notizia {
+  overflow-y: auto;
+  max-height: 100%;
+}
+.animazioneHover {
+  transition: transform 0.3s linear;
+}
+
+.animazioneHover:hover {
+  transform: scale(1.1);
+}
+
+.box-commenti {
+  background-color: rgba(252, 252, 252, 0.336);
+  border-radius: 30px;
+  border: 5px solid rgba(0, 0, 0, 0.4);
 }
