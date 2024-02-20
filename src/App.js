@@ -6,6 +6,8 @@ import sfondo from "./foto/sfondo.avif";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Footer from "./components/Footer";
+import Fumetti from "./components/Fumetti";
+import Promozioni from "./components/Promozioni";
 
 function App() {
   return (
@@ -15,8 +17,8 @@ function App() {
         <MyNavbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/promozioni" element={<Home />} />
-          <Route path="/fumetti" element={<Home />} />
+          <Route path="/promozioni" element={<Promozioni />} />
+          <Route path="/fumetti" element={<Fumetti />} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
         <Footer />

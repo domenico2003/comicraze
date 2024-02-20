@@ -40,7 +40,7 @@ let MyNavbar = () => {
               <Link
                 to={"/fumetti"}
                 className={`nav-link link-nav ${
-                  location.pathname === "/nuove" && "active"
+                  location.pathname === "/fumetti" && "active"
                 }`}
               >
                 Catalogo fumetti
@@ -48,7 +48,7 @@ let MyNavbar = () => {
               <Link
                 to={"/promozioni"}
                 className={`nav-link link-nav ${
-                  location.pathname === "/nuove" && "active"
+                  location.pathname === "/promozioni" && "active"
                 }`}
               >
                 Promozioni
